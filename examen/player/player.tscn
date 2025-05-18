@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://ctabhl3h8dkpu"]
+
+[ext_resource type="Script" uid="uid://b56c2j08rxsjq" path="res://player/player.gd" id="1_rkbax"]
+[ext_resource type="Texture2D" uid="uid://w420chfcsh0r" path="res://player/mario png.png" id="2_g1dw6"]
+
+[node name="player" type="CharacterBody2D"]
+script = ExtResource("1_rkbax")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.254167, 0.220833)
+texture = ExtResource("2_g1dw6")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Label" type="Label" parent="Camera2D"]
+offset_left = 534.0
+offset_top = -320.0
+offset_right = 574.0
+offset_bottom = -297.0
